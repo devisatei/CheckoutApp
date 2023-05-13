@@ -1,0 +1,10 @@
+Things to work on later:
+
+- enhance inputs and textarea CSS and overall backgrounds;
+- make 'required' on modal inputs work;
+- enhance color pallet;
+- close feedback div when btn is click;
+- insert rating stars as btns before textarea feedback input;
+- make the app mobile-first responsive;
+
+-> Unify app's language, EN and PT-BR;

@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+} 
+
+header {
+    color: rgb(220, 175, 61);
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/acai_header.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20vh; /* or any other height that you prefer */
+  }
+
+  header h1 {
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+  
+.products-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.inner-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-text {
+    margin: 0 7rem;
+}
+
+.ordered-item-info, .ordered-item {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.ordered-item-info {
+    gap: 2em;
+    align-items: center;
+}
+
+.total-order {
+    border-top: 1px solid black;
+}
+
+.item-price {
+    margin: auto;
+}
+
+/* input stylings */
+input {
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(114, 23, 114);
+    border-radius: 5px;
+    padding: 0.5em;;
+}
+
+input:focus {
+    border: 2px solid #8a71ec;
+    background-color:  #e6e8ec;
+}
+
+form input {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+textarea {
+    outline: none;
+    width: 50%;
+    height: 4rem;
+}
+
+.feedback-area {
+    display: block;
+}
+
+/* buttons styling */
+.add-btn {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(114, 23, 114);
+    font-weight: bold;
+    color: rgb(220, 175, 61);
+}
+
+.remove-item-btn {
+    border: none;
+    padding: 5px 20px;
+    background-color: crimson;
+    color: antiquewhite;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#complete-order {
+    color: rgb(220, 175, 61);
+    display: block;
+    background-color: rgb(114, 23, 114);
+    margin: auto;
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-radius: 10%;
+}
+
+#complete-order:hover {
+    cursor: pointer;
+}
+
+#paybtn {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5%;
+    width: 30%;
+    color: rgb(220, 175, 61);
+    background-color: rgb(114, 23, 114);
+}
+
+#close-modal-btn {
+    border: none;
+    padding: 5px 20px;
+    background-color: crimson;
+    color: antiquewhite;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+#feedback {
+    color: rgb(220, 175, 61);
+    cursor: pointer;
+    display: block;
+    background-color: rgb(114, 23, 114);
+    margin: 10px auto;
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+/* utilities */
+
+#order-container {
+    display: none;
+}
+
+#modal {
+    display: none;
+    color: rgb(210, 158, 93);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: rgb(211, 192, 211);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+#confirm-msg {
+    display: none;
+}
+
+#emoji {
+    font-size: 40px;
+}
